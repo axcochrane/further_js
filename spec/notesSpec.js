@@ -9,7 +9,7 @@
   }
 
   function arrayToContain(test_name, element, array) {
-    if (array.find["element_1"] === true)  {
+    if (array.pop() === "test_element")  {
       document.write (test_name + " - Pass");
     } else {
       document.write (test_name + " - Fail");
