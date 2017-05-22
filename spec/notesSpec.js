@@ -1,25 +1,24 @@
 // .toEqual
 
-describe ('Class', function(){
-  it ('does a certain action',function(){
-    expect(test_function()). toEqual () // toBeTrue
-  });
-});
+// describe ('Class', function(){
+//   it ('does a certain action',function(){
+//     expect(test_function()). toEqual () // toBeTrue
+//   });
+// });
+//
+//
+// expect
+// toEqual
 
+(function(describe) {
+  function testEqualsArgument(arguement) {
+    var test_function = new Test_function();
 
-expect
-toEqual
-
-var Test = new function() {
-
-}
-
-Test.prototype.expect = function( testFunction ) {
-  testFunction()
-};
-
-Test.prototype.toEqual = function( assertion ) {
-  if (function === assertion ) {return 'test passes'}
-  else {return 'test fails'}
-
-};
+    if (test_function !== arguement) {
+      throw new Error("Does not equal");
+    } else {
+      return "Equals";
+    }
+  }
+    testEqualsArgument("true");
+})(this);
